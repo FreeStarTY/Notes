@@ -1,0 +1,22 @@
+site_name: Tianyu's Notes
+theme:
+  name: material
+nav:
+  - ML 笔记:
+    - CNN 基础: ML/CNN基础.md
+    - Transformer: ML/Transformer.md
+  - LeetCode:
+    - Greedy Algorithm:
+      - Core Idea: LeetCode/Greedy Algorithm解释.md
+      - 455. Assign Cookies: LeetCode/455. Assign Cookies.md
+      - 135. Candy: LeetCode/135. Candy.md
+    - Two Sum: LeetCode/001_TwoSum.md
+    - 二叉树层序遍历: LeetCode/102_BinaryTreeLevelOrder.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - attr_list

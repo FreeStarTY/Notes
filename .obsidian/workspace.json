@@ -13,28 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML_Notes/Basic Concepts.md",
+                "file": "Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Concepts"
-            }
-          }
-        ]
-      },
-      {
-        "id": "e50eddaba360325a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "426850ac99ada91e",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "title": "Greedy Algorithm解释"
             }
           }
         ]
@@ -110,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "index 的反向链接列表"
             }
           },
           {
@@ -128,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "index 的出链列表"
             }
           },
           {
@@ -156,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "index 的大纲"
             }
           }
         ],
@@ -182,11 +169,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "426850ac99ada91e",
+  "active": "0dc827b6ab54731d",
   "lastOpenFiles": [
+    "docs/index.md",
+    "Leetcode/Greedy Algorithm/455. Assign Cookies.md",
+    "Pasted image 20250813101607.png",
+    "Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
+    "Leetcode/Greedy Algorithm",
     "ML_Notes/Basic Concepts.md",
-    "欢迎.md",
-    "Leetcode",
-    "ML_Notes"
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.7e37652d.min.css.map",
+    "site/assets/stylesheets/main.7e37652d.min.css",
+    "site/assets/stylesheets",
+    "site/assets/javascripts/workers/search.d50fe291.min.js.map",
+    "site/assets/javascripts/workers/search.d50fe291.min.js",
+    "site/assets/javascripts/workers",
+    "site/search/search_index.json",
+    "site/assets/images/favicon.png",
+    "欢迎.md"
   ]
 }
