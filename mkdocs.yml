@@ -7,11 +7,11 @@ nav:
     - Transformer: ML/Transformer.md
   - LeetCode:
     - Greedy Algorithm:
-      - Core Idea: LeetCode/Greedy Algorithm解释.md
-      - 455. Assign Cookies: LeetCode/455. Assign Cookies.md
-      - 135. Candy: LeetCode/135. Candy.md
-    - Two Sum: LeetCode/001_TwoSum.md
-    - 二叉树层序遍历: LeetCode/102_BinaryTreeLevelOrder.md
+      - Core Idea: LeetCode/Greedy Algorithm/Greedy Algorithm解释.md
+      - 455. Assign Cookies: LeetCode/Greedy Algorithm/455. Assign Cookies.md
+      - 135. Candy: LeetCode/Greedy Algorithm/135. Candy.md
+    - Two Sum: LeetCode/Two Sum/001_TwoSum.md
+    - 二叉树层序遍历: LeetCode/二叉树层序遍历/102_BinaryTreeLevelOrder.md
 markdown_extensions:
   - admonition
   - codehilite

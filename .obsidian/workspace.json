@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
+                "file": "docs/LeetCode/Greedy Algorithm/455. Assign Cookies.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Greedy Algorithm解释"
+              "title": "455. Assign Cookies"
             }
           }
         ]
@@ -171,22 +171,28 @@
   },
   "active": "0dc827b6ab54731d",
   "lastOpenFiles": [
+    "docs/LeetCode/Greedy Algorithm/Greedy Algorithm解释.md",
+    "docs/LeetCode/Greedy Algorithm/455. Assign Cookies.md",
     "docs/index.md",
+    "docs/Pasted image 20250813101607.png",
+    "site/search/search_index.json",
+    "site/search",
+    "site/ML_Notes/Basic Concepts/index.html",
+    "site/ML_Notes/Basic Concepts",
+    "site/ML_Notes",
+    "site/LeetCode/Greedy Algorithm/Greedy Algorithm解释/index.html",
+    "site/LeetCode/Greedy Algorithm/455. Assign Cookies/index.html",
+    "site/LeetCode/Greedy Algorithm/Greedy Algorithm解释",
+    "site/LeetCode/Greedy Algorithm/455. Assign Cookies",
+    "site/LeetCode/Greedy Algorithm",
+    "site/assets/images/favicon.png",
+    "docs/ML_Notes/Basic Concepts.md",
+    "docs/Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
+    "docs/Leetcode/Greedy Algorithm/455. Assign Cookies.md",
+    "Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
     "Leetcode/Greedy Algorithm/455. Assign Cookies.md",
     "Pasted image 20250813101607.png",
-    "Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",
-    "Leetcode/Greedy Algorithm",
     "ML_Notes/Basic Concepts.md",
-    "site/assets/stylesheets/palette.06af60db.min.css.map",
-    "site/assets/stylesheets/palette.06af60db.min.css",
-    "site/assets/stylesheets/main.7e37652d.min.css.map",
-    "site/assets/stylesheets/main.7e37652d.min.css",
-    "site/assets/stylesheets",
-    "site/assets/javascripts/workers/search.d50fe291.min.js.map",
-    "site/assets/javascripts/workers/search.d50fe291.min.js",
-    "site/assets/javascripts/workers",
-    "site/search/search_index.json",
-    "site/assets/images/favicon.png",
     "欢迎.md"
   ]
 }
