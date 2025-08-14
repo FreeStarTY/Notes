@@ -754,25 +754,24 @@ You need to output 2.</p>
 <p><strong>贪心策略</strong>：<br />
 给剩余孩子中<strong>最小饥饿度</strong>的孩子分配<strong>最小的能使其饱腹的饼干</strong>。</p>
 <h2 id="_2">代码实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>```python</p>
-<p>class Solution:
-    def findContentChildren(self, g: List[int], s: List[int]) -&gt; int:
-        # 先排序
-        g.sort()
-        s.sort()</p>
-<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">g_i</span><span class="p">,</span><span class="w"> </span><span class="n">s_i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">    </span><span class="n">g_n</span><span class="p">,</span><span class="w"> </span><span class="n">s_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">g</span><span class="p">),</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">findContentChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">s</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="c1"># 先排序</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
-<span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="n">双指针遍历实现贪心算法</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="n">g_i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">g_n</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">s_i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nl">s_n</span><span class="p">:</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">g</span><span class="o">[</span><span class="n">g_i</span><span class="o">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">s</span><span class="o">[</span><span class="n">s_i</span><span class="o">]</span><span class="err">:</span>
-<span class="w">            </span><span class="n">g_i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">        </span><span class="n">s_i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+        <span class="n">g_i</span><span class="p">,</span> <span class="n">s_i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+        <span class="n">g_n</span><span class="p">,</span> <span class="n">s_n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">g_i</span>
+        <span class="c1"># 双指针遍历实现贪心算法</span>
+        <span class="k">while</span> <span class="n">g_i</span> <span class="o">&lt;</span> <span class="n">g_n</span> <span class="ow">and</span> <span class="n">s_i</span> <span class="o">&lt;</span> <span class="n">s_n</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">g</span><span class="p">[</span><span class="n">g_i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">s_i</span><span class="p">]:</span>
+                <span class="n">g_i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">s_i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">g_i</span>
 </code></pre></div>
 
-<p>````</p>
 <h2 id="complexity-analysis">Complexity Analysis<a class="headerlink" href="#complexity-analysis" title="Permanent link">&para;</a></h2>
 <h3 id="_3">设定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>

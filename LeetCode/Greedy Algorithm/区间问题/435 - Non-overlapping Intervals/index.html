@@ -720,24 +720,23 @@
 <h3 id="_2">贪心策略<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>优先保留<strong>结尾小</strong>且<strong>不相交</strong>的区间。</p>
 <h2 id="_3">代码实现<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>```python</p>
-<p>class Solution:
-    def eraseOverlapIntervals(self, intervals: List[List[int]]) -&gt; int:
-        # 按照结束点从小到大排序
-        intervals.sort(key=lambda x: x[1])</p>
-<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="nv">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w">   </span>#<span class="w"> </span>返回值：移除的区间个数
-<span class="w">    </span><span class="nv">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="nv">inf</span><span class="w">  </span>#<span class="w"> </span>当前的结束点
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">eraseOverlapIntervals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">intervals</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="c1"># 按照结束点从小到大排序</span>
+        <span class="n">intervals</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nv">x</span>,<span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">intervals</span>:
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nv">k</span>:<span class="w">  </span>#<span class="w"> </span>不重叠，保留该区间
-<span class="w">            </span><span class="nv">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">y</span>
-<span class="w">        </span><span class="k">else</span>:<span class="w">       </span>#<span class="w"> </span>重叠，移除该区间
-<span class="w">            </span><span class="nv">ans</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 返回值：移除的区间个数</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span>  <span class="c1"># 当前的结束点</span>
 
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">ans</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">intervals</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">k</span><span class="p">:</span>  <span class="c1"># 不重叠，保留该区间</span>
+                <span class="n">k</span> <span class="o">=</span> <span class="n">y</span>
+            <span class="k">else</span><span class="p">:</span>       <span class="c1"># 重叠，移除该区间</span>
+                <span class="n">ans</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">ans</span>
 </code></pre></div>
 
-<p>````</p>
 <h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
