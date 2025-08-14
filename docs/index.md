@@ -1,13 +1,10 @@
-# Welcome to MkDocs
+# 欢迎来到 Tianyu's Notes
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这里记录了我的学习笔记与实践总结，目前包括：
+- **ML Notes**：机器学习基础与进阶知识
+- **LeetCode**：算法题解与思路总结
+- **其他专题**：工作与学习中遇到的有价值内容
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
 ## Project layout
 
@@ -17,7 +14,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
             Basic Concepts.md
         LeetCode/
 	        Greedy Algorithm/
-	        Greedy Algorithm解释.md
+	        核心思想.md
 	        分配问题/
 			    135 - Assign Cookies.md
 			    455 - Candy.md

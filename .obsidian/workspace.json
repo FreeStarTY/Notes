@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "435 - Non-overlapping Intervals"
+              "title": "index"
             }
           }
         ]
@@ -174,6 +174,7 @@
     "docs/LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies.md",
     "docs/LeetCode/Greedy Algorithm/分配问题/135 - Candy.md",
     "docs/LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals.md",
+    "docs/index.md",
     "docs/LeetCode/Greedy Algorithm/核心思想.md",
     "site/search/search_index.json",
     "site/search",
@@ -186,7 +187,6 @@
     "site/LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies/index.html",
     "site/LeetCode/Greedy Algorithm/分配问题/135 - Candy/index.html",
     "site/assets/images/favicon.png",
-    "docs/index.md",
     "docs/ML_Notes/Basic Concepts.md",
     "docs/Pasted image 20250813101607.png",
     "docs/Leetcode/Greedy Algorithm/Greedy Algorithm解释.md",

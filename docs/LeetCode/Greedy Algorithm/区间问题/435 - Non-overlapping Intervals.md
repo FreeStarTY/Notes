@@ -29,7 +29,6 @@ Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`
 
 ## 代码实现
 ```python
-
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         # 按照结束点从小到大排序
@@ -45,7 +44,7 @@ class Solution:
                 ans += 1
         
         return ans
-````
+```
 
 ## 复杂度分析
 

@@ -24,7 +24,6 @@ You need to output 2.
 
 ## 代码实现
 ```python
-
 class Solution:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         # 先排序
@@ -41,7 +40,7 @@ class Solution:
             s_i += 1
 
         return g_i
-````
+```
 
 ## Complexity Analysis
 

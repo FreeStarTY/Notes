@@ -720,8 +720,8 @@
 <h3 id="_2">贪心策略<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>优先保留<strong>结尾小</strong>且<strong>不相交</strong>的区间。</p>
 <h2 id="_3">代码实现<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>```python
-class Solution:
+<p>```python</p>
+<p>class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -&gt; int:
         # 按照结束点从小到大排序
         intervals.sort(key=lambda x: x[1])</p>
