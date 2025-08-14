@@ -37,6 +37,7 @@ The third child gets 1 candy because it satisfies the above two conditions.
 
 ## 代码实现
 ```python
+
 class Solution:
     def candy(self, ratings: List[int]) -> int:
         n = len(ratings)
