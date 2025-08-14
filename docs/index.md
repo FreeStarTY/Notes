@@ -17,7 +17,11 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
             Basic Concepts.md
         LeetCode/
 	        Greedy Algorithm/
-			    455.Assign Cookies.md
-			    Greedy Algorithm解释.md
+	        Greedy Algorithm解释.md
+	        分配问题/
+			    135 - Assign Cookies.md
+			    455 - Candy.md
+			区间问题/
+				435 - Non-overlapping Intervals.md
             
 

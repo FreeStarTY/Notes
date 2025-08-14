@@ -2,16 +2,16 @@ site_name: Tianyu's Notes
 theme:
   name: material
 nav:
-  - ML 笔记:
-    - CNN 基础: ML/CNN基础.md
-    - Transformer: ML/Transformer.md
+  - ML Notes:
+    - Basic Concepts: ML_Notes/Basic Concepts.md
   - LeetCode:
     - Greedy Algorithm:
-      - Core Idea: LeetCode/Greedy Algorithm/Greedy Algorithm解释.md
-      - 455. Assign Cookies: LeetCode/Greedy Algorithm/455. Assign Cookies.md
-      - 135. Candy: LeetCode/Greedy Algorithm/135. Candy.md
-    - Two Sum: LeetCode/Two Sum/001_TwoSum.md
-    - 二叉树层序遍历: LeetCode/二叉树层序遍历/102_BinaryTreeLevelOrder.md
+      - 核心思想: LeetCode/Greedy Algorithm/核心思想.md
+      - 分配问题: 
+        - 455 - Assign Cookies: LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies.md
+        - 135 - Candy: LeetCode/Greedy Algorithm/分配问题/135 - Candy.md
+      - 区间问题:
+        - 435 - Non-overlapping Intervals: LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals.md
 markdown_extensions:
   - admonition
   - codehilite
