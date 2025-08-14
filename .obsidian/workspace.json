@@ -15,7 +15,7 @@
               "state": {
                 "file": "docs/index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "index"
@@ -171,17 +171,17 @@
   },
   "active": "0dc827b6ab54731d",
   "lastOpenFiles": [
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/main.7e37652d.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.7e37652d.min.css",
+    "site/assets/stylesheets",
     "site/search/search_index.json",
     "site/search",
     "site/ML_Notes/Basic Concepts/index.html",
     "site/ML_Notes/Basic Concepts",
     "site/ML_Notes",
     "site/LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals/index.html",
-    "site/LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals",
-    "site/LeetCode/Greedy Algorithm/区间问题",
-    "site/LeetCode/Greedy Algorithm/分配问题/135 - Candy/index.html",
-    "site/LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies/index.html",
-    "site/LeetCode/Greedy Algorithm/分配问题/135 - Candy",
     "site/assets/images/favicon.png",
     "docs/LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies.md",
     "docs/LeetCode/Greedy Algorithm/分配问题/135 - Candy.md",
