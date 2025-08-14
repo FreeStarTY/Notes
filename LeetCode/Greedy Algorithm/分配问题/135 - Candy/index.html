@@ -732,8 +732,8 @@ The third child gets 1 candy because it satisfies the above two conditions.</p>
 <p>将左右都需要比较的关系拆解为<strong>分别对左边和右边的比较</strong>：<br />
 - 在每次遍历中，只考虑并更新一侧的大小关系。</p>
 <h2 id="_3">代码实现<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>```python
-class Solution:
+<p>```python</p>
+<p>class Solution:
     def candy(self, ratings: List[int]) -&gt; int:
         n = len(ratings)
         candies = [1] * n</p>
