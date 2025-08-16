@@ -16,7 +16,7 @@
     
     
       
-        <title>142 Linked List Cycle II - Tianyu's Notes</title>
+        <title>167 Two Sum II Input array is sorted - Tianyu's Notes</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              142   Linked List Cycle II
+              167   Two Sum II   Input array is sorted
             
           </span>
         </div>
@@ -909,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Two Pointers 双指针/核心思想.md" class="md-nav__link">
+      <a href="../../%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/" class="md-nav__link">
         
   
   
@@ -970,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Two Pointers 双指针/快慢指针/142 - Linked List Cycle II.md" class="md-nav__link">
+      <a href="../../%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/142%20-%20Linked%20List%20Cycle%20II/" class="md-nav__link">
         
   
   
@@ -1039,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Two Pointers 双指针/归并两个有序数组/88 - Merge Sorted Array.md" class="md-nav__link">
+      <a href="../../%E5%BD%92%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/88%20-%20Merge%20Sorted%20Array/" class="md-nav__link">
         
   
   
@@ -1108,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Two Pointers 双指针/滑动窗口/76 - Minimum Window Substring.md" class="md-nav__link">
+      <a href="../../%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/76%20-%20Minimum%20Window%20Substring/" class="md-nav__link">
         
   
   
@@ -1247,30 +1247,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="思路">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hash-set" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法一：Hash Set
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#floyd-tortoise-and-hare" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法二：Floyd 判圈法（快慢指针 / Tortoise and Hare）
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1280,62 +1256,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="代码实现">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法一：快慢指针
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hash-set_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法二：Hash Set
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       复杂度分析
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="复杂度分析">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法一：快慢指针
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hash-set_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      方法二：Hash Set
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1355,140 +1283,65 @@
 
 
 
-  <h1>142   Linked List Cycle II</h1>
+  <h1>167   Two Sum II   Input array is sorted</h1>
 
-<p>Given the <code>head</code> of a linked list, return <em>the node where the cycle begins. If there is no cycle, return</em> <code>null</code>.</p>
-<p>There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the <code>next</code> pointer. Internally, <code>pos</code> is used to denote the index of the node that tail's <code>next</code> pointer is connected to (<strong>0-indexed</strong>). It is <code>-1</code> if there is no cycle. <strong>Note that</strong> <code>pos</code> <strong>is not passed as a parameter</strong>.</p>
-<p><strong>Do not modify</strong> the linked list.</p>
+<p>Given a <strong>1-indexed</strong> array of integers <code>numbers</code> that is already <strong><em>sorted in non-decreasing order</em></strong>, find two numbers such that they add up to a specific <code>target</code> number. Let these two numbers be <code>numbers[index1]</code> and <code>numbers[index2]</code> where <code>1 &lt;= index1 &lt; index2 &lt;= numbers.length</code>.</p>
+<p>Return <em>the indices of the two numbers,</em> <code>index1</code> <em>and</em> <code>index2</code><em>, <strong>added by one</strong> as an integer array</em> <code>[index1, index2]</code> <em>of length 2.</em></p>
+<p>The tests are generated such that there is <strong>exactly one solution</strong>. You <strong>may not</strong> use the same element twice.</p>
+<p>Your solution must use only constant extra space.</p>
 <p><strong>Example 1:</strong></p>
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" /></p>
-<p><strong>Input:</strong> head = [3,2,0,-4], pos = 1
-<strong>Output:</strong> tail connects to node index 1
-<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the second node.</p>
+<p><strong>Input:</strong> numbers = [2,7,11,15], target = 9
+<strong>Output:</strong> [1,2]
+<strong>Explanation:</strong> The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].</p>
 <p><strong>Example 2:</strong></p>
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" /></p>
-<p><strong>Input:</strong> head = [1,2], pos = 0
-<strong>Output:</strong> tail connects to node index 0
-<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the first node.</p>
+<p><strong>Input:</strong> numbers = [2,3,4], target = 6
+<strong>Output:</strong> [1,3]
+<strong>Explanation:</strong> The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We return [1, 3].</p>
 <p><strong>Example 3:</strong></p>
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" /></p>
-<p><strong>Input:</strong> head = [1], pos = -1
-<strong>Output:</strong> no cycle
-<strong>Explanation:</strong> There is no cycle in the linked list.</p>
+<p><strong>Input:</strong> numbers = [-1,0], target = -1
+<strong>Output:</strong> [1,2]
+<strong>Explanation:</strong> The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].</p>
 <p><strong>Constraints:</strong></p>
 <ul>
-<li>The number of the nodes in the list is in the range <code>[0, 104]</code>.</li>
-<li><code>-105 &lt;= Node.val &lt;= 105</code></li>
-<li><code>pos</code> is <code>-1</code> or a <strong>valid index</strong> in the linked-list.</li>
+<li><code>2 &lt;= numbers.length &lt;= 3 * 104</code></li>
+<li><code>-1000 &lt;= numbers[i] &lt;= 1000</code></li>
+<li><code>numbers</code> is sorted in <strong>non-decreasing order</strong>.</li>
+<li><code>-1000 &lt;= target &lt;= 1000</code></li>
+<li>The tests are generated such that there is <strong>exactly one solution</strong>.</li>
 </ul>
 <h2 id="_1">思路<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="hash-set">方法一：Hash Set<a class="headerlink" href="#hash-set" title="Permanent link">&para;</a></h3>
-<ol>
-<li>从头开始遍历，将访问过的节点放入 <code>hash set</code> 中  </li>
-<li>每走一步检查当前节点是否已在 <code>set</code> 中  </li>
-<li>如果已存在，说明找到环路起点，返回当前节点  </li>
-<li>如果走到 <code>null</code>，说明没有环路，返回 <code>None</code>  </li>
-</ol>
-<h3 id="floyd-tortoise-and-hare">方法二：Floyd 判圈法（快慢指针 / Tortoise and Hare）<a class="headerlink" href="#floyd-tortoise-and-hare" title="Permanent link">&para;</a></h3>
-<ol>
-<li>定义两个指针：  </li>
-<li><code>slow</code> 每次走一步  </li>
-<li><code>fast</code> 每次走两步  </li>
-<li>如果 <code>fast</code> 或 <code>fast.next</code> 为 <code>None</code>，说明无环  </li>
-<li>若存在环路，则 <code>slow</code> 和 <code>fast</code> 一定会在环上的某一点相遇  </li>
-<li>相遇时将 <code>fast</code> 移回链表头，并让 <code>slow</code>、<code>fast</code> 都每次走一步  </li>
-<li>当 <code>slow == fast</code> 时，相遇节点就是环的起点（数学可证明）</li>
-</ol>
-<hr />
+<ul>
+<li><strong>数组已排好序</strong>，使用双指针法：</li>
+<li>指针 <code>l</code> 从最左边向右遍历</li>
+<li>指针 <code>r</code> 从最右边向左遍历</li>
+<li>若一定存在解，可证明：</li>
+<li>若 <code>numbers[l] + numbers[r] &lt; target</code>，则 <code>l</code> 右移一位</li>
+<li>若 <code>numbers[l] + numbers[r] &gt; target</code>，则 <code>r</code> 左移一位</li>
+<li>最终一定会收敛到正确的组合</li>
+</ul>
 <h2 id="_2">代码实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">方法一：快慢指针<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Definition for singly-linked list.</span>
-<span class="c1"># class ListNode:</span>
-<span class="c1">#     def __init__(self, x):</span>
-<span class="c1">#         self.val = x</span>
-<span class="c1">#         self.next = None</span>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">twoSum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="n">l</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">detectCycle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">head</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">]:</span>
-        <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span>
-        <span class="n">fast</span> <span class="o">=</span> <span class="n">head</span>
-        <span class="n">is_first_cycle</span> <span class="o">=</span> <span class="kc">True</span>
-
-        <span class="c1"># 阶段一：判断是否有环</span>
-        <span class="k">while</span> <span class="n">fast</span> <span class="o">!=</span> <span class="n">slow</span> <span class="ow">or</span> <span class="n">is_first_cycle</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">fast</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">None</span>
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span>
-            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="n">next</span>
-            <span class="n">is_first_cycle</span> <span class="o">=</span> <span class="kc">False</span>
-
-        <span class="c1"># 阶段二：寻找环的起点</span>
-        <span class="n">fast</span> <span class="o">=</span> <span class="n">head</span>
-        <span class="k">while</span> <span class="n">fast</span> <span class="o">!=</span> <span class="n">slow</span><span class="p">:</span>
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span>
-            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="n">next</span>
-        <span class="k">return</span> <span class="n">fast</span>
+        <span class="k">while</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="k">elif</span> <span class="n">numbers</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+                <span class="n">l</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">r</span> <span class="o">-=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<h3 id="hash-set_1">方法二：Hash Set<a class="headerlink" href="#hash-set_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Definition for singly-linked list.</span>
-<span class="c1"># class ListNode:</span>
-<span class="c1">#     def __init__(self, x):</span>
-<span class="c1">#         self.val = x</span>
-<span class="c1">#         self.next = None</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">detectCycle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">head</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">]:</span>
-        <span class="n">node_seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c1"># 已访问节点集合</span>
-
-        <span class="n">node</span> <span class="o">=</span> <span class="n">head</span>
-        <span class="k">while</span> <span class="n">node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">node_seen</span><span class="p">:</span>  <span class="c1"># 当前节点已出现，说明是环路起点</span>
-                <span class="k">return</span> <span class="n">node</span>
-            <span class="n">node_seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
-            <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">next</span>
-
-        <span class="k">return</span> <span class="kc">None</span>
-</code></pre></div>
-
-<hr />
-<h2 id="_4">复杂度分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="_5">方法一：快慢指针<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h2 id="_3">复杂度分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>时间复杂度</strong>：<code>O(n)</code></p>
-<ul>
-<li>
-<p>阶段一：最多遍历 <code>n</code> 步</p>
+<p><strong>时间复杂度</strong>：<code>O(n)</code><br />
+    数组最多遍历一遍</p>
 </li>
 <li>
-<p>阶段二：最多遍历 <code>n</code> 步</p>
-</li>
-<li>
-<p>总体复杂度：<code>O(n)</code></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>空间复杂度</strong>：<code>O(1)</code></p>
-<ul>
-<li>仅使用 <code>slow</code> 和 <code>fast</code> 两个指针</li>
-</ul>
-</li>
-</ul>
-<h3 id="hash-set_2">方法二：Hash Set<a class="headerlink" href="#hash-set_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p><strong>时间复杂度</strong>：<code>O(n)</code></p>
-<ul>
-<li>每个节点只访问一次</li>
-</ul>
-</li>
-<li>
-<p><strong>空间复杂度</strong>：<code>O(n)</code></p>
-<ul>
-<li>最坏情况需将所有节点放入集合</li>
-</ul>
+<p><strong>空间复杂度</strong>：<code>O(1)</code><br />
+    仅使用了 <code>l</code>、<code>r</code> 两个指针的额外空间</p>
 </li>
 </ul>
 

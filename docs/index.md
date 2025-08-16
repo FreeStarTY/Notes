@@ -43,7 +43,7 @@
                 区间问题/
                     435 - Non-overlapping Intervals.md
                 核心思想.md
-            Two Pointer 双指针/
+            Two Pointers 双指针/
                 归并两个有序数组/
                     88 - Merge Sorted Array.md
                 滑动窗口/
