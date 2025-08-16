@@ -5,13 +5,33 @@ nav:
   - ML Notes:
     - Basic Concepts: ML_Notes/Basic Concepts.md
   - LeetCode:
-    - Greedy Algorithm:
-      - 核心思想: LeetCode/Greedy Algorithm/核心思想.md
+    - Greedy Algorithm 贪心算法:
+      - 核心思想: LeetCode/Greedy Algorithm 贪心算法/核心思想.md
       - 分配问题: 
-        - 455 - Assign Cookies: LeetCode/Greedy Algorithm/分配问题/455 - Assign Cookies.md
-        - 135 - Candy: LeetCode/Greedy Algorithm/分配问题/135 - Candy.md
+        - 455 - Assign Cookies: LeetCode/Greedy Algorithm 贪心算法/分配问题/455 - Assign Cookies.md
+        - 135 - Candy: LeetCode/Greedy Algorithm 贪心算法/分配问题/135 - Candy.md
       - 区间问题:
-        - 435 - Non-overlapping Intervals: LeetCode/Greedy Algorithm/区间问题/435 - Non-overlapping Intervals.md
+        - 435 - Non-overlapping Intervals: LeetCode/Greedy Algorithm 贪心算法/区间问题/435 - Non-overlapping Intervals.md
+    - Binary Search 二分查找:
+      - 核心思想: LeetCode/Binary Search 二分查找/核心思想.md
+      - 查找峰值:
+        - 162 - Find Peak Element: LeetCode/Binary Search 二分查找/查找峰值/162 - Find Peak Element.md
+      - 查找区间：
+        - 34 - Find First and Last Position of Element in Sorted Array: LeetCode/Binary Search 二分查找/查找区间/34 - Find First and Last Position of Element in Sorted Array.md
+      - 求开方:
+        - 69 - Sqrt(x): LeetCode/Binary Search 二分查找/求开方/69 - Sqrt(x).md
+      - 旋转数组查找数字：
+        - 81 - Search in Rotated Sorted Array II: LeetCode/Binary Search 二分查找/旋转数组查找数字/81 - Search in Rotated Sorted Array II.md
+    - Two Pointers 双指针:
+      - 核心思想: LeetCode/Two Pointers 双指针/核心思想.md
+      - 快慢指针:
+        - 142 - Linked List Cycle II: LeetCode/Two Pointers 双指针/快慢指针/142 - Linked List Cycle II.md
+      - 归并两个有序数组：
+        - 88 - Merge Sorted Array: LeetCode/Two Pointers 双指针/归并两个有序数组/88 - Merge Sorted Array.md
+      - 滑动窗口：
+        - 76 - Minimum Window Substring: LeetCode/Two Pointers 双指针/滑动窗口/76 - Minimum Window Substring.md
+      - Two Sum:
+        - 167 - Two Sum II - Input Array Is Sorted: LeetCode/Two Pointers 双指针/Two Sum/167 - Two Sum II - Input Array Is Sorted.md
 markdown_extensions:
   - admonition
   - codehilite

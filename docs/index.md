@@ -11,9 +11,11 @@
 
 ## 🆕 最近更新
 
-- 2025-08-12：完善贪心算法题解（分配、分糖果、区间）
 
-- 2025-08-10：补充 ML Notes 基础概念
+
+- 2025-08-15：双指针、二分查找
+
+- 2025-08-12：贪心算法
 
 
 
@@ -24,12 +26,33 @@
         ML_Notes/
             Basic Concepts.md
         LeetCode/
-	        Greedy Algorithm/
-	        核心思想.md
-	        分配问题/
-			    135 - Assign Cookies.md
-			    455 - Candy.md
-			区间问题/
-				435 - Non-overlapping Intervals.md
+            Binary Search 二分查找/
+                查找峰值/
+                    162 - Find Peak Element.md
+                查找区间/
+                    34 - Find First and Last Position of Element in Sorted Array.md
+                求平方/
+                    69 - Sqrt(x).md
+                旋转数组查找数字/
+                    81 - Search in Rotated Sorted Array II.md
+                核心思想.md
+            Greedy Algorithm 贪心算法/
+                分配问题/
+                    135 - Candy.md
+                    455 - Assign Cookies.md
+                区间问题/
+                    435 - Non-overlapping Intervals.md
+                核心思想.md
+            Two Pointer 双指针/
+                归并两个有序数组/
+                    88 - Merge Sorted Array.md
+                滑动窗口/
+                    76 - Minimum Window Substring.md
+                快慢指针/
+                    142 - Linked List Cycle II.md
+                Two Sum/
+                    167 - Two Sum II - Input array is sorted.md
+                核心思想.md
+
             
 
