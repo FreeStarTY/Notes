@@ -10,19 +10,17 @@
       
       
       
-        <link rel="next" href="../../LeetCode/Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Basic Concepts - Tianyu's Notes</title>
+        <title>88 Merge Sorted Array - Tianyu's Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -41,7 +39,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -71,7 +74,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Tianyu&#39;s Notes" class="md-header__button md-logo" aria-label="Tianyu's Notes" data-md-component="logo">
+    <a href="../../../.." title="Tianyu&#39;s Notes" class="md-header__button md-logo" aria-label="Tianyu's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Concepts
+              88   Merge Sorted Array
             
           </span>
         </div>
@@ -169,7 +172,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Tianyu&#39;s Notes" class="md-nav__button md-logo" aria-label="Tianyu's Notes" data-md-component="logo">
+    <a href="../../../.." title="Tianyu&#39;s Notes" class="md-nav__button md-logo" aria-label="Tianyu's Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -184,20 +187,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -213,7 +214,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             ML Notes
@@ -224,17 +225,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../ML_Notes/Basic%20Concepts/" class="md-nav__link">
         
   
   
@@ -245,7 +239,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -341,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/" class="md-nav__link">
+      <a href="../../../Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/" class="md-nav__link">
         
   
   
@@ -402,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98/455%20-%20Assign%20Cookies/" class="md-nav__link">
+      <a href="../../../Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98/455%20-%20Assign%20Cookies/" class="md-nav__link">
         
   
   
@@ -425,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98/135%20-%20Candy/" class="md-nav__link">
+      <a href="../../../Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98/135%20-%20Candy/" class="md-nav__link">
         
   
   
@@ -494,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98/435%20-%20Non-overlapping%20Intervals/" class="md-nav__link">
+      <a href="../../../Greedy%20Algorithm%20%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98/435%20-%20Non-overlapping%20Intervals/" class="md-nav__link">
         
   
   
@@ -571,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/" class="md-nav__link">
+      <a href="../../../Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3/" class="md-nav__link">
         
   
   
@@ -632,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%9F%A5%E6%89%BE%E5%B3%B0%E5%80%BC/162%20-%20Find%20Peak%20Element/" class="md-nav__link">
+      <a href="../../../Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%9F%A5%E6%89%BE%E5%B3%B0%E5%80%BC/162%20-%20Find%20Peak%20Element/" class="md-nav__link">
         
   
   
@@ -701,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%9F%A5%E6%89%BE%E5%8C%BA%E9%97%B4/34%20-%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/" class="md-nav__link">
+      <a href="../../../Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%9F%A5%E6%89%BE%E5%8C%BA%E9%97%B4/34%20-%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/" class="md-nav__link">
         
   
   
@@ -770,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%B1%82%E5%BC%80%E6%96%B9/69%20-%20Sqrt%28x%29/" class="md-nav__link">
+      <a href="../../../Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%B1%82%E5%BC%80%E6%96%B9/69%20-%20Sqrt%28x%29/" class="md-nav__link">
         
   
   
@@ -839,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97/81%20-%20Search%20in%20Rotated%20Sorted%20Array%20II/" class="md-nav__link">
+      <a href="../../../Binary%20Search%20%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97/81%20-%20Search%20in%20Rotated%20Sorted%20Array%20II/" class="md-nav__link">
         
   
   
@@ -916,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Two Pointers 双指针/核心思想.md" class="md-nav__link">
+      <a href="../../../Two Pointers 双指针/核心思想.md" class="md-nav__link">
         
   
   
@@ -977,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Two Pointers 双指针/快慢指针/142 - Linked List Cycle II.md" class="md-nav__link">
+      <a href="../../../Two Pointers 双指针/快慢指针/142 - Linked List Cycle II.md" class="md-nav__link">
         
   
   
@@ -1046,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Two Pointers 双指针/归并两个有序数组/88 - Merge Sorted Array.md" class="md-nav__link">
+      <a href="../../../Two Pointers 双指针/归并两个有序数组/88 - Merge Sorted Array.md" class="md-nav__link">
         
   
   
@@ -1115,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Two Pointers 双指针/滑动窗口/76 - Minimum Window Substring.md" class="md-nav__link">
+      <a href="../../../Two Pointers 双指针/滑动窗口/76 - Minimum Window Substring.md" class="md-nav__link">
         
   
   
@@ -1184,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LeetCode/Two Pointers 双指针/Two Sum/167 - Two Sum II - Input Array Is Sorted.md" class="md-nav__link">
+      <a href="../../../Two Pointers 双指针/Two Sum/167 - Two Sum II - Input Array Is Sorted.md" class="md-nav__link">
         
   
   
@@ -1241,6 +1234,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      思路
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      代码实现
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      复杂度分析
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1255,18 +1283,94 @@
 
 
 
-  <h1>Basic Concepts</h1>
+  <h1>88   Merge Sorted Array</h1>
+
+<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
+<p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>
+<p>The final sorted array should not be returned by the function, but instead be <em>stored inside the array</em> <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of <code>m + n</code>, where the first <code>m</code> elements denote the elements that should be merged, and the last <code>n</code> elements are set to <code>0</code> and should be ignored. <code>nums2</code> has a length of <code>n</code>.</p>
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+<strong>Output:</strong> [1,2,2,3,5,6]
+<strong>Explanation:</strong> The arrays we are merging are [1,2,3] and [2,5,6].
+The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> nums1 = [1], m = 1, nums2 = [], n = 0
+<strong>Output:</strong> [1]
+<strong>Explanation:</strong> The arrays we are merging are [1] and [].
+The result of the merge is [1].</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> nums1 = [0], m = 0, nums2 = [1], n = 1
+<strong>Output:</strong> [1]
+<strong>Explanation:</strong> The arrays we are merging are [] and [1].
+The result of the merge is [1].
+Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>nums1.length == m + n</code></li>
+<li><code>nums2.length == n</code></li>
+<li><code>0 &lt;= m, n &lt;= 200</code></li>
+<li><code>1 &lt;= m + n &lt;= 200</code></li>
+<li><code>-109 &lt;= nums1[i], nums2[j] &lt;= 109</code></li>
+</ul>
+<h2 id="_1">思路<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>已知条件</strong>：<code>nums1</code> 和 <code>nums2</code> 都是有序数组  </li>
+<li><strong>三个指针</strong>：</li>
+<li>指针 <code>i</code> 指向 <code>nums1</code> 有效部分的末尾（<code>m - 1</code>）</li>
+<li>指针 <code>j</code> 指向 <code>nums2</code> 的末尾（<code>n - 1</code>）</li>
+<li>指针 <code>pos</code> 指向合并后数组的末尾（<code>m + n - 1</code>）</li>
+<li><strong>操作步骤</strong>：</li>
+<li>比较 <code>nums1[i]</code> 和 <code>nums2[j]</code>，将较大值放在 <code>pos</code> 位置</li>
+<li>移动对应的指针以及 <code>pos</code></li>
+<li>处理边界情况：<ul>
+<li>若 <code>nums2</code> 提前排完，只需移动 <code>pos</code></li>
+<li>若 <code>nums1</code> 提前排完，将 <code>nums2</code> 剩余部分依次填入</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">代码实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums1</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">m</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">nums2</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Do not return anything, modify nums1 in-place instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+
+        <span class="k">while</span> <span class="n">pos</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># nums2 先排完</span>
+                <span class="n">pos</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># nums1 先排完</span>
+                <span class="n">nums1</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">pos</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">nums1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">nums2</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                <span class="n">nums1</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">pos</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nums1</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">pos</span> <span class="o">-=</span> <span class="mi">1</span>
+</code></pre></div>
+
+<h2 id="_3">复杂度分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>时间复杂度</strong>：<code>O(m + n)</code><br />
+    最多遍历整个 <code>m + n</code> 数组一次</p>
+</li>
+<li>
+<p><strong>空间复杂度</strong>：<code>O(1)</code><br />
+    仅使用了指针 <code>i</code>、<code>j</code>、<code>pos</code> 的额外空间</p>
+</li>
+</ul>
 
 
 
 
 
 
-
-
-
-  
-  
 
 
 
@@ -1309,10 +1413,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
