@@ -59,7 +59,7 @@ class Solution:
             if max_val == i:
                 chunks += 1
         return chunks
-````
+```
 
 ---
 
