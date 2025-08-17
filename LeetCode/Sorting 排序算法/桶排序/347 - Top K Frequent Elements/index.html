@@ -1868,32 +1868,32 @@
 </ol>
 <hr />
 <h2 id="_2">代码实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>```python
-from collections import Counter
-from typing import List</p>
-<p>class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -&gt; List[int]:
-        # 第一次桶排序：统计频次
-        counts = Counter(nums)</p>
-<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="n">第二次桶排序</span><span class="err">：</span><span class="n">按频次分桶</span>
-<span class="w">    </span><span class="n">buckets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dict</span><span class="p">()</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="nf">count</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">counts</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="err">:</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nf">count</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">buckets</span><span class="p">:</span>
-<span class="w">            </span><span class="n">buckets</span><span class="o">[</span><span class="n">count</span><span class="o">]</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-<span class="w">        </span><span class="k">else</span><span class="err">:</span>
-<span class="w">            </span><span class="n">buckets</span><span class="o">[</span><span class="n">count</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">num</span><span class="o">]</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
 
-<span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="n">从高到低遍历</span><span class="err">，</span><span class="n">收集前</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">个元素</span>
-<span class="w">    </span><span class="n">top_k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nf">count</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">nums</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nf">count</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nl">buckets</span><span class="p">:</span>
-<span class="w">            </span><span class="n">top_k</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">buckets</span><span class="o">[</span><span class="n">count</span><span class="o">]</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="nf">len</span><span class="p">(</span><span class="n">top_k</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nl">k</span><span class="p">:</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">top_k</span><span class="o">[</span><span class="n">:k</span><span class="o">]</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">top_k</span><span class="o">[</span><span class="n">:k</span><span class="o">]</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">topKFrequent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="c1"># 第一次桶排序：统计频次</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+
+        <span class="c1"># 第二次桶排序：按频次分桶</span>
+        <span class="n">buckets</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">buckets</span><span class="p">:</span>
+                <span class="n">buckets</span><span class="p">[</span><span class="n">count</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">buckets</span><span class="p">[</span><span class="n">count</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span><span class="p">]</span>
+
+        <span class="c1"># 从高到低遍历，收集前 k 个元素</span>
+        <span class="n">top_k</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">buckets</span><span class="p">:</span>
+                <span class="n">top_k</span> <span class="o">+=</span> <span class="n">buckets</span><span class="p">[</span><span class="n">count</span><span class="p">]</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">top_k</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">k</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">top_k</span><span class="p">[:</span><span class="n">k</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">top_k</span><span class="p">[:</span><span class="n">k</span><span class="p">]</span>
 </code></pre></div>
 
-<p>````</p>
 <hr />
 <h2 id="_3">复杂度分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>

@@ -1894,20 +1894,21 @@ However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks po
 </ul>
 <hr />
 <h2 id="_2">代码实现<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>```python
-from typing import List</p>
-<p>class Solution:
-    def maxChunksToSorted(self, arr: List[int]) -&gt; int:
-        chunks, max_val = 0, 0
-        for i in range(len(arr)):
-            # 更新区间最大值
-            if arr[i] &gt; max_val:
-                max_val = arr[i]
-            # 判断是否可以分块
-            if max_val == i:
-                chunks += 1
-        return chunks
-````</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">maxChunksToSorted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">arr</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">chunks</span><span class="p">,</span> <span class="n">max_val</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+            <span class="c1"># 更新区间最大值</span>
+            <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">max_val</span><span class="p">:</span>
+                <span class="n">max_val</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="c1"># 判断是否可以分块</span>
+            <span class="k">if</span> <span class="n">max_val</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">chunks</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">chunks</span>
+</code></pre></div>
+
 <hr />
 <h2 id="_3">复杂度分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
