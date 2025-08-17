@@ -53,6 +53,22 @@
                 Two Sum/
                     167 - Two Sum II - Input array is sorted.md
                 核心思想.md
+            Data Structure 数据结构/
+			    数组/
+			        48 - Rotate Image.md
+			        240 - Search a 2D Matrix II.md
+					448 - Find All Numbers Disappeared in an Array.md
+			        769 - Max Chunks To Make Sorted.md
+			    栈和队列/
+					232 - Implement Queue using Stacks.md
+			    Python 常用数据结构.md
+			Sorting 排序算法/
+			    快速选择/
+			        215 - Kth Largest Element in an Array.md
+			    桶排序/
+			        347 - Top K Frequent Elements.md
+			    常用排序算法.md
+
 
             
 
